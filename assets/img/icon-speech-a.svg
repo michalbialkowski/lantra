@@ -1,0 +1,35 @@
+<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="72px" height="69px">
+<defs>
+<filter id="Filter_0">
+    <feFlood flood-color="rgb(0, 158, 224)" flood-opacity="1" result="floodOut" />
+    <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+    <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+</filter>
+<filter id="Filter_1">
+    <feFlood flood-color="rgb(0, 158, 224)" flood-opacity="1" result="floodOut" />
+    <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+    <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+</filter>
+<filter id="Filter_2">
+    <feFlood flood-color="rgb(0, 158, 224)" flood-opacity="1" result="floodOut" />
+    <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+    <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+</filter>
+
+</defs>
+<g filter="url(#Filter_0)">
+<path fill-rule="evenodd"  fill="rgb(0, 158, 224)"
+ d="M52.867,68.106 L37.219,57.157 L0.597,57.157 L1.000,0.999 L71.582,0.804 L71.582,57.157 L55.449,57.157 L55.449,66.818 L52.867,68.106 ZM3.824,53.937 L38.186,53.937 L52.222,63.759 L52.222,53.937 L68.355,53.937 L68.355,4.024 L3.824,4.024 L3.824,53.937 Z"/>
+</g>
+<g filter="url(#Filter_1)">
+<path fill-rule="evenodd"  fill="rgb(0, 158, 224)"
+ d="M24.838,40.294 L25.184,40.246 L25.276,40.006 L30.363,36.668 L29.070,40.167 L31.219,40.539 L31.219,43.000 L23.074,43.000 L23.074,41.451 L24.838,40.294 ZM42.391,34.933 L33.007,34.933 L37.917,31.711 L41.219,31.711 L40.585,29.959 L43.542,28.019 L48.191,40.246 L50.281,40.539 L50.281,43.000 L42.117,43.000 L42.117,40.539 L44.266,40.167 L42.391,34.933 Z"/>
+</g>
+<g filter="url(#Filter_2)">
+<path fill-rule="evenodd"  fill="rgb(0, 158, 224)"
+ d="M39.672,30.558 L36.141,21.046 L32.273,31.672 L37.976,31.672 L30.625,36.496 L30.496,36.496 L30.456,36.607 L22.441,41.866 L33.152,14.366 L39.266,14.366 L44.484,27.401 L39.672,30.558 Z"/>
+</g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="29" viewBox="0 0 40 29">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e2007a;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="782" y="2133" width="40" height="29" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#009ee0"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Shape_4_copy_2" data-name="Shape 4 copy 2" class="cls-1" d="M819.093,2133.01l-1.454,1.45c-6.915,6.95-14.362,14.96-21.273,21.96l-10.177-8.4-1.583-1.3L782,2149.91l1.582,1.31,11.631,9.59,1.433,1.18,1.325-1.33c7.34-7.37,15.322-16.02,22.578-23.3L822,2135.9Z" transform="translate(-782 -2133)"/>
+</svg>
