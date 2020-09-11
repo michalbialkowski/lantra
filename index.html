@@ -32,7 +32,7 @@
         </header>
         <main id="section__page__main">
             <div id="section__page__main__services" class="pt">
-                <div class="container-fluid p-0">
+                <div class="container-fluid p-0" id="uslugi">
                     <div class="row no-gutters">
                         <div class="col-lg-4 d-flex">
                             <div class="card border-0 w-100" style="background: url(&quot;assets/img/bg-services.jpg&quot;) center / cover;">
@@ -101,7 +101,7 @@
                 </div>
             </div>
             <div id="section__page__main__quality">
-                <div class="container-fluid p-0">
+                <div class="container-fluid p-0" id="jakosc">
                     <div class="row no-gutters">
                         <div class="col-lg-4 col-xl-5 d-flex">
                             <div class="card d-flex border-0 w-100">
@@ -162,7 +162,7 @@
                 </div>
             </div>
             <div id="section__page__main__specializations">
-                <div class="container-fluid p-0">
+                <div class="container-fluid p-0" id="specjalizacje">
                     <div class="row no-gutters">
                         <div class="col-lg-4 d-flex">
                             <div class="card border-0 w-100" style="background: url(&quot;assets/img/bg-specializations.jpg&quot;) center / cover;">
@@ -227,7 +227,7 @@
                 </div>
             </div>
             <div id="section__page__main__clients" class="mb--reverse--130">
-                <div class="container-fluid p-0">
+                <div class="container-fluid p-0" id="klienci">
                     <div class="bg-light pt-5" style="background: url(&quot;assets/img/bg-clients.jpg&quot;) center / cover;">
                         <div class="container">
                             <h2 class="display-3 text-center text-white mb-2">Nasi Klienci</h2>
@@ -415,9 +415,9 @@
                 </div>
             </div>
             <div id="section__page__main__estimation" class="mb--reverse--80">
-                <div class="container-fluid p-0">
+                <div class="container-fluid p-0" id="cennik">
                     <div class="text-white bg-primary pt--150 px-3">
-                        <h2 class="display-2 text-center mb-3" id="wycen-tlumaczenie">Wyceń tłumaczenie</h2>
+                        <h2 class="display-2 text-center mb-3">Wyceń tłumaczenie</h2>
                         <p class="lead text-center text-secondary font-weight-bold">Kalkulator pozwala szybko oszacować wstępny koszt tłumaczenia.</p>
                         <p class="text-center"><small class="d-inline-block">W zależności od podanych parametrów, tematyki materiału do tłumaczenia oraz formatu pliku źródłowego cena tłumaczenia może ulec zmianie.<br>Przedstawiona oferta cenowa ma charakter informacyjny i nie stanowi oferty handlowej w rozumieniu art. 66 Kodeksu Cywilnego.<br></small></p>
                         <form>
@@ -537,7 +537,7 @@
                 </div>
             </div>
             <div id="section__page__main__contact">
-                <div class="container-fluid p-0">
+                <div class="container-fluid p-0" id="kontakt">
                     <div class="bg-light pt--150" style="background: url(&quot;assets/img/bg-contact.jpg&quot;) center / cover;">
                         <div class="container">
                             <h2 class="text-center mb-3" id="kontakt">Kontakt</h2>
@@ -665,27 +665,44 @@
         </footer>
     </div>
     <div>
-        <div class="modal fade mb-4 modal--styled modal--fullscreen" role="dialog" tabindex="-1" id="modal__menu">
+        <div class="modal fade mb-4 modal--styled modal--left" role="dialog" tabindex="-1" id="modal__menu">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content rounded-0">
-                    <div class="modal-header bg-secondary d-flex justify-content-between align-items-center border-0 p-0">
-                        <h1 class="mb-0 pl-3"><a href="index.html"><img class="img-fluid d-block height--40" src="assets/img/logo-lantra.svg"></a></h1>
-                        <div><button class="btn btn-link rounded-0 ratio width--60 p-0" data-dismiss="modal" type="button"><span class="text-primary"><i class="la la-times" style="font-size: 32px;"></i></span></button></div><button type="button" class="close"
-                            data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
                     <div class="modal-body py-0 px-0">
                         <div>
-                            <ul class="list-group rounded-0">
+                            <ul class="list-group text-uppercase rounded-0 lead">
                                 <li class="list-group-item px-0">
-                                    <div class="container-fluid"><span class="d-flex justify-content-start"><a class="h4 mb-0" href="biznes-i-marketing.html">Biznes i marketing</a></span></div>
+                                    <div class="container-fluid"><span class="d-flex justify-content-start"><button class="btn btn-link rounded-0 ratio width--32 p-0" data-toggle="modal" type="button" data-target="#modal__menu" data-backdrop="true"><span class="text-primary"><i class="la la-times" style="font-size: 32px;"></i></span></button>
+                                        </span>
+                                    </div>
                                 </li>
                                 <li class="list-group-item px-0">
-                                    <div class="container-fluid"><span class="d-flex justify-content-start"><a class="h4 mb-0" href="finanse-i-ekonomia.html">Finanse i ekonomia</a></span></div>
+                                    <div class="container-fluid"><span class="d-flex justify-content-start"><a class="font-weight-bold" href="index.html#uslugi">Usługi</a></span></div>
                                 </li>
                                 <li class="list-group-item px-0">
-                                    <div class="container-fluid"><span class="d-flex justify-content-start"><a class="h4 mb-0" href="prawo.html">Prawo</a></span></div>
+                                    <div class="container-fluid"><span class="d-flex justify-content-start"><a class="font-weight-bold" href="index.html#jakosc">Jakość</a></span></div>
                                 </li>
                                 <li class="list-group-item px-0">
-                                    <div class="container-fluid"><span class="d-flex justify-content-start"><a class="h4 mb-0" href="medycyna-i-nauka.html">Medycyna i nauka</a></span></div>
+                                    <div class="container-fluid"><span class="d-flex justify-content-start mb-2"><a class="font-weight-bold" href="index.html#specjalizacje">Specjalizacje</a></span>
+                                        <ul class="list-unstyled">
+                                            <li><a href="biznes-i-marketing.html">Biznes i marketing</a></li>
+                                            <li><a href="finanse-i-ekonomia.html">Finanse i ekonomia</a></li>
+                                            <li><a href="prawo.html">Prawo</a></li>
+                                            <li><a href="medycyna-i-nauka.html">Medycyna i nauka</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="list-group-item px-0">
+                                    <div class="container-fluid"><span class="d-flex justify-content-start"><a class="font-weight-bold" href="index.html#klienci">Klienci</a></span></div>
+                                </li>
+                                <li class="list-group-item px-0">
+                                    <div class="container-fluid"><span class="d-flex justify-content-start"><a class="font-weight-bold" href="index.html#cennik">Cennik</a></span></div>
+                                </li>
+                                <li class="list-group-item px-0">
+                                    <div class="container-fluid"><span class="d-flex justify-content-start"><a class="font-weight-bold" href="index.html#kontakt">Kontakt</a></span></div>
+                                </li>
+                                <li class="list-group-item px-0">
+                                    <div class="container-fluid"><span class="d-flex justify-content-start"><a class="font-weight-bold" href="/en">EN</a></span></div>
                                 </li>
                             </ul>
                         </div>
