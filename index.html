@@ -16,19 +16,21 @@
 <body>
     <div id="section__page">
         <header>
-            <div class="fixed-top">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col">
-                            <div class="py-3"><button class="btn btn-primary" type="button" data-toggle="modal" data-target="#modal__menu"><i class="la la-bars" style="font-size: 40px;"></i></button></div>
+            <div>
+                <div class="fixed-top">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <div class="py-3"><button class="btn btn-primary" type="button" data-toggle="modal" data-target="#modal__menu"><i class="la la-bars" style="font-size: 40px;"></i></button></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div class="container-fluid px-0">
-                    <div class="ratio ratio-3-4 ratio-sm-1-1 ratio-md-5-4 ratio-lg-16-9 ratio-xl-2-1" style="background: url(&quot;assets/img/banner.jpg&quot;) center / cover;">
-                        <div class="justify-content-start align-items-start"></div>
+                <div>
+                    <div class="container-fluid px-0">
+                        <div class="ratio ratio-3-4 ratio-sm-1-1 ratio-md-5-4 ratio-lg-16-9 ratio-xl-2-1" style="background: url(&quot;assets/img/banner.jpg&quot;) center / cover;">
+                            <div class="justify-content-start align-items-start"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -234,7 +236,7 @@
                     <div class="bg-light pt-5" style="background: url(&quot;assets/img/bg-clients.jpg&quot;) center / cover;">
                         <div class="container">
                             <h2 class="display-3 text-center text-white mb-2">Nasi Klienci</h2>
-                            <div class="row py-3 flickity--slider">
+                            <div class="row flex-nowrap py-3 flickity--slider">
                                 <div class="col-12 col-lg-6 col-xl-4 d-flex py-3">
                                     <div class="d-flex card-speech">
                                         <div class="card w-100 border-0 pt--30 px--30 pb--66">
@@ -374,7 +376,6 @@
                                             <div class="card-footer text-right border-0 bg-transparent p-0">
                                                 <h3 class="text-primary h6 mb-0">Sylwia Raczyńska</h3>
                                                 <p class="mb-0"><small class="d-inline-block">Dyrektor Hotelu Fabryka Wełny, Pabianice</small></p>
-                                                <p class="mb-0"><small class="d-inline-block"></small></p>
                                             </div>
                                         </div>
                                     </div>
@@ -409,7 +410,6 @@
                                             <div class="card-footer text-right border-0 bg-transparent p-0">
                                                 <h3 class="text-primary h6 mb-0">Estera Łoskot</h3>
                                                 <p class="mb-0"><small class="d-inline-block">Lasotronix</small></p>
-                                                <p class="mb-0"><small class="d-inline-block"></small></p>
                                             </div>
                                         </div>
                                     </div>
@@ -644,7 +644,7 @@
                                         <div class="col-md-auto col-lg-3 col-xl-auto py-3">
                                             <ul class="list-unstyled d-flex flex-column align-items-center align-items-lg-start menu mb-0">
                                                 <li><a class="text-nowrap text-white" href="polityka-prywatnosci.html">Polityka prywatności</a></li>
-                                                <li><a class="text-nowrap text-white" href="#">Polityka cookies</a></li>
+                                                <li><a class="text-nowrap text-white" href="polityka-prywatnosci.html#polityka-cookies">Polityka cookies</a></li>
                                             </ul>
                                         </div>
                                         <div class="col-lg-3 col-xl-auto py-3">
@@ -659,7 +659,7 @@
                                 <div class="col-12 py-3 copyright">
                                     <ul class="list-unstyled text-center d-flex flex-column align-items-center mb-0">
                                         <li class="text-center text-white-50">Copyright © 2020 Lantra Tłumaczenia</li>
-                                        <li><a class="text-white-50" href="https://hadrysiak.com">Made by Hadrysiak.com</a></li>
+                                        <li><a class="text-white-50" href="https://hadrysiak.com" target="_blank"><span>Made by&nbsp;</span><strong class="text-uppercase font-weight-bold">hadrysiak</strong><span class="text-uppercase">.com</span></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -670,24 +670,22 @@
         </footer>
     </div>
     <div>
-        <div class="modal fade mb-4 modal--styled modal--left" role="dialog" tabindex="-1" id="modal__menu">
+        <div class="modal fade shadow mb-4 modal--styled modal--left" role="dialog" tabindex="-1" id="modal__menu" data-backdrop="true">
             <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content rounded-0">
-                    <div class="modal-body px-0 py-3">
+                <div class="modal-content rounded-0 bg-light">
+                    <div class="modal-header bg-light p-0 border-0">
+                        <div><button class="btn btn-primary" data-toggle="modal" type="button" data-target="#modal__menu"><span><i class="la la-times" style="font-size: 32px;"></i></span></button></div><button type="button" class="close" data-dismiss="modal"
+                            aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                    <div class="modal-body px-0 py-3 bg-transparent">
                         <div>
                             <ul class="list-group text-uppercase rounded-0 lead">
-                                <li class="list-group-item px-0 border-0">
-                                    <div class="container-fluid"><span class="d-flex justify-content-start"><button class="btn btn-link rounded-0 ratio width--24 p-0" data-toggle="modal" type="button" data-target="#modal__menu" data-backdrop="true"><span class="text-primary"><i class="la la-times" style="font-size: 32px;"></i></span></button>
-                                        </span>
-                                    </div>
-                                </li>
-                                <li class="list-group-item px-0 border-0">
+                                <li class="list-group-item px-0 border-0 bg-transparent">
                                     <div class="container-fluid"><span class="d-flex justify-content-start"><a class="font-weight-bold" href="index.html#uslugi">Usługi</a></span></div>
                                 </li>
-                                <li class="list-group-item px-0 border-0">
+                                <li class="list-group-item px-0 border-0 bg-transparent">
                                     <div class="container-fluid"><span class="d-flex justify-content-start"><a class="font-weight-bold" href="index.html#jakosc">Jakość</a></span></div>
                                 </li>
-                                <li class="list-group-item px-0 border-0">
+                                <li class="list-group-item px-0 border-0 bg-transparent">
                                     <div class="container-fluid"><span class="d-flex justify-content-start mb-2"><a class="font-weight-bold" href="index.html#specjalizacje">Specjalizacje</a></span>
                                         <ul class="list-unstyled">
                                             <li><a href="biznes-i-marketing.html">Biznes i marketing</a></li>
@@ -697,21 +695,31 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li class="list-group-item px-0 border-0">
+                                <li class="list-group-item px-0 border-0 bg-transparent">
                                     <div class="container-fluid"><span class="d-flex justify-content-start"><a class="font-weight-bold" href="index.html#klienci">Klienci</a></span></div>
                                 </li>
-                                <li class="list-group-item px-0 border-0">
+                                <li class="list-group-item px-0 border-0 bg-transparent">
                                     <div class="container-fluid"><span class="d-flex justify-content-start"><a class="font-weight-bold" href="index.html#cennik">Cennik</a></span></div>
                                 </li>
-                                <li class="list-group-item px-0 border-0">
+                                <li class="list-group-item px-0 border-0 bg-transparent">
                                     <div class="container-fluid"><span class="d-flex justify-content-start"><a class="font-weight-bold" href="index.html#kontakt">Kontakt</a></span></div>
                                 </li>
-                                <li class="list-group-item px-0 border-0">
+                                <li class="list-group-item px-0 border-0 bg-transparent">
                                     <div class="container-fluid"><span class="d-flex justify-content-start"><a class="font-weight-bold" href="/en">EN</a></span></div>
                                 </li>
                             </ul>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-white bg-secondary py-3 fixed-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <p class="mb-0"><strong>Ta strona wykorzystuje pliki cookies.</strong> Więcej informacji znajdą Państwo w naszej <a href="polityka-prywatnosci.html#polityka-cookies">Poiltyce cookies</a></p>
+                    </div>
+                    <div class="col-auto"><button class="btn btn-primary btn-sm text-uppercase" type="button">Akceptuję</button></div>
                 </div>
             </div>
         </div>

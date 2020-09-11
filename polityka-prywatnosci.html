@@ -15,6 +15,26 @@
 
 <body>
     <div id="section__page">
+        <header>
+            <div>
+                <div class="fixed-top">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <div class="py-3"><button class="btn btn-primary" type="button" data-toggle="modal" data-target="#modal__menu"><i class="la la-bars" style="font-size: 40px;"></i></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="container-fluid px-0">
+                        <div class="ratio ratio-3-4 ratio-sm-1-1 ratio-md-5-4 ratio-lg-16-9 ratio-xl-2-1" style="background: url(&quot;assets/img/banner.jpg&quot;) center / cover;">
+                            <div class="justify-content-start align-items-start"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
         <main id="section__page__main">
             <div class="bg-light" id="section__page__main__content">
                 <div class="container-fluid p-0">
@@ -114,7 +134,7 @@
                                             których sam jest administratorem. Operator nie przekazuje od siebie żadnych dodatkowych danych osobowych serwisowi Facebook. Usługa bazuje na wykorzystaniu plików cookie w urządzeniu końcowym użytkownika.</li>
                                     </ol>
                                 </li>
-                                <li>Informacja o plikach cookie
+                                <li id="polityka-cookies">Informacja o plikach cookie
                                     <ol>
                                         <li>Serwis korzysta z plików cookie.</li>
                                         <li>Pliki cookie (tzw. „ciasteczka”) stanowią dane informatyczne, w szczególności pliki tekstowe, które przechowywane są w urządzeniu końcowym użytkownika Serwisu i przeznaczone są do korzystania ze stron internetowych
@@ -164,333 +184,6 @@
                     </div>
                 </div>
             </div>
-            <div id="section__page__main__services" class="pt">
-                <div class="container-fluid p-0" id="uslugi">
-                    <div class="row no-gutters">
-                        <div class="col-lg-4 d-flex">
-                            <div class="card border-0 w-100" style="background: url(&quot;assets/img/bg-services.jpg&quot;) center / cover;">
-                                <div class="card-body p-0">
-                                    <h2 class="display-3 text-primary d-flex justify-content-center justify-content-lg-end h1 mb-0 position-relative top--reverse--22"><span class="bg-white d-inline-block px-3 pt-3 px-4 px-xl-5 pb--54 speech">Usługi</span></h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-8">
-                            <div class="row no-gutters checkerboard">
-                                <div class="col-md-6 d-flex">
-                                    <div class="card border-0 w-100">
-                                        <div class="card-body d-flex flex-column justify-content-between p-3 p-lg-4 p-xl-5">
-                                            <div class="mb-3">
-                                                <h3 class="d-flex align-items-center h1 mb-4"><img class="icon mr-4 width--72" src="assets/img/icon-speech-a.svg"><span>Tłumaczenie<br>pisemne</span></h3>
-                                                <p class="mb-0">Profesjonalne tłumaczenie wykonane przez zawodowego tłumacza, który ma niezbędne doświadczenie, wiedzę z danej dziedziny, wymagane umiejętności językowe oraz zaawansowane narzędzia informatyczne. Usługa
-                                                    przeznaczona dla tekstów tłumaczonych zarówno z języka angielskiego na polski, jak i z polskiego na angielski, które będą wykorzystywane dla celów prywatnych lub wewnętrznych w organizacji.<br></p>
-                                            </div>
-                                            <div class="d-flex justify-content-end"><a class="btn btn-primary py-2 px-4 button--scroll" role="button" href="#cennik">Wyceń usługę</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 d-flex">
-                                    <div class="card border-0 w-100">
-                                        <div class="card-body d-flex flex-column justify-content-between p-3 p-lg-4 p-xl-5">
-                                            <div class="mb-3">
-                                                <h3 class="d-flex align-items-center h1 mb-4"><img class="icon mr-4 width--72" src="assets/img/icon-speech-checkbox.svg"><span>Korekta<br>językowa</span></h3>
-                                                <p class="mb-0">Usługa polegająca na dokładnej korekcie językowej tłumaczenia przez native speakera języka angielskiego. Ta usługa przeznaczona jest przede wszystkim dla tekstów tłumaczonych z języka polskiego na język
-                                                    angielski. Przeprowadzenie korekty językowej sprawia, że tekst przetłumaczony przez zawodowego tłumacza jest nie tylko merytorycznie poprawny i zgodny z oryginałem, ale także gwarantuje ponadprzeciętną
-                                                    jakość stylistyczną i płynność.</p>
-                                            </div>
-                                            <div class="d-flex justify-content-end"><a class="btn btn-primary py-2 px-4 button--scroll" role="button" href="#kontakt">Napisz do nas, aby wycenić usługę</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 d-flex">
-                                    <div class="card border-0 w-100">
-                                        <div class="card-body d-flex flex-column justify-content-between p-3 p-lg-4 p-xl-5">
-                                            <div class="mb-3">
-                                                <h3 class="d-flex align-items-center h1 mb-4"><img class="icon mr-4 width--68" src="assets/img/icon-loupe.svg"><span>Weryfikacja<br>merytoryczna</span></h3>
-                                                <p class="mb-0">Usługa polegająca na dokładnej i skrupulatnej weryfikacji tłumaczenia przez innego tłumacza-specjalistę, który ma niezbędne doświadczenie, wiedzę z danej dziedziny, wymagane umiejętności językowe oraz zaawansowane
-                                                    narzędzia informatyczne. Usługa przeznaczona dla tekstów tłumaczonych zarówno z języka angielskiego na polski, jak i z polskiego na angielski. Dodatkowa weryfikacja merytoryczna zapewnia, że tłumaczenie
-                                                    (m.in. tłumaczenie artykułów naukowych) przygotowane przez tłumacza jest bardzo uważnie sprawdzone pod kątem użytej terminologii, zwrotów, nazewnictwa itd., jak również spełnia wszystkie normy i wymagania.<br></p>
-                                            </div>
-                                            <div class="d-flex justify-content-end"><a class="btn btn-primary py-2 px-4 button--scroll" role="button" href="#kontakt">Napisz do nas, aby wycenić usługę</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 d-flex">
-                                    <div class="card border-0 w-100">
-                                        <div class="card-body d-flex flex-column justify-content-between p-3 p-lg-4 p-xl-5">
-                                            <div class="mb-3">
-                                                <h3 class="d-flex align-items-center h1 mb-4"><img class="icon mr-4 width--60" src="assets/img/icon-globe.svg"><span>Lokalizacja</span></h3>
-                                                <p class="mb-0">Lokalizacja to usługa polegająca na adaptacji tłumaczonego produktu do warunków i realiów panujących w danym kraju. Usługa ta obejmuje kompleksowe badanie kultury docelowej z myślą o dostosowaniu produktu
-                                                    do potrzeb lokalnych. Usługa lokalizacji dotyczy przede wszystkim oprogramowania, gier komputerowych, stron internetowych, jak również różnego rodzaju treści multimedialnych. Celem lokalizacji jest opracowanie
-                                                    produktu w języku angielskim w taki sposób, aby odbiorca docelowy był przekonany, że produkt jest w pełni zgodny z lokalnymi normami, przy uwzględnieniu różnic wynikających z odmiennych sposobów pisowni
-                                                    lub dialektów.</p>
-                                            </div>
-                                            <div class="d-flex justify-content-end"><a class="btn btn-primary py-2 px-4 button--scroll" role="button" href="#kontakt">Napisz do nas, aby wycenić usługę</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="section__page__main__quality">
-                <div class="container-fluid p-0" id="jakosc">
-                    <div class="row no-gutters">
-                        <div class="col-lg-4 col-xl-5 d-flex">
-                            <div class="card d-flex border-0 w-100">
-                                <div class="card-body d-flex flex-column justify-content-between px-3 px-lg-5 pt--90 pb--120">
-                                    <h2 class="display-2 text-lg-right text-primary card-title font-weight-normal">Jakość</h2>
-                                    <div>
-                                        <p class="text-lg-right">Dokładamy wszelkich starań, aby przed przystąpieniem do projektu zbadać potrzeby naszego klienta, dzięki czemu dostarczona usługa będzie w pełni zgodna z jego wymaganiami. Staramy się także aktywować klienta i włączać
-                                            go w proces realizacji, aby podejmowane decyzje odpowiadały jego oczekiwaniom.<br></p>
-                                        <p class="text-lg-right">Wszystkie działania są wykonywane w sposób kontrolowany przez sprawdzonych tłumaczy, a każdy projekt podlega wewnętrznej weryfikacji przed odesłaniem do klienta, przez co jesteśmy w stanie zapewnić najwyższą jakość
-                                            świadczonych przez nas usług.<br></p>
-                                        <p class="text-lg-right">Nasi klienci szczególnie cenią nas za proste i zrozumiałe zasady współpracy, dotrzymywanie ustalonych terminów i rzetelne rozliczanie wykonanej usługi.<br></p>
-                                    </div>
-                                    <div class="d-flex justify-content-end"><a class="btn btn-primary py-2 px-4 button--scroll" role="button" href="#cennik">Wyceń usługę</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-xl-7 d-flex">
-                            <div class="card text-white bg-secondary border-0 w-100">
-                                <div class="card-body d-flex px-0 pt--90 pb--120">
-                                    <div class="row">
-                                        <div class="col-xl-10 d-flex">
-                                            <ul class="list-group d-flex flex-column justify-content-between position-relative px-3">
-                                                <li class="list-group-item d-flex align-items-baseline border-0 p-0 bg-transparent mb-4"><img class="mr-3 width--44" src="assets/img/icon-checkbox.svg">
-                                                    <div>
-                                                        <h3 class="text-primary h2">15 lat doświadczenia</h3>
-                                                        <p class="mb-0">Lantra Tłumaczenia to marka należąca do firmy Language Solutions, która działa na rynku polskim i europejskim od 2005 roku. Dzięki wieloletniemu doświadczeniu, tysiącom zrealizowanych projektów oraz
-                                                            sprawdzonemu zespołowi zaufanych tłumaczy jesteśmy ekspertami w tłumaczeniu różnego rodzaju tekstów z języka polskiego na język angielski oraz z angielskiego na polski.&nbsp;<br></p>
-                                                    </div>
-                                                </li>
-                                                <li class="list-group-item d-flex align-items-baseline border-0 p-0 bg-transparent mb-4"><img class="mr-3 width--44" src="assets/img/icon-checkbox.svg">
-                                                    <div>
-                                                        <h3 class="text-primary h2">Przejrzyste zasady</h3>
-                                                        <p class="mb-0">Przed przystąpieniem do realizacji tłumaczenia przygotowujemy wycenę i przedstawiamy szczegółowe zasady oraz dokładny termin wykonania usługi. Klient doskonale wie, jak przebiegać będzie cały proces
-                                                            tłumaczenia i jaka będzie jego ostateczna cena.<br></p>
-                                                    </div>
-                                                </li>
-                                                <li class="list-group-item d-flex align-items-baseline border-0 p-0 bg-transparent mb-4"><img class="mr-3 width--44" src="assets/img/icon-checkbox.svg">
-                                                    <div>
-                                                        <h3 class="text-primary h2">Gwarancja jakości i ceny</h3>
-                                                        <p class="mb-0">Działamy zgodnie z wytycznymi zawartymi w normie ISO 17100, która definiuje i określa szczególne wymagania dla firm świadczących usługi tłumaczeń pisemnych. Zapewniamy maksymalną spójność, wysoką
-                                                            jakość merytoryczną i językową naszych przekładów. Przez cały czas realizacji zlecenia mamy pełną kontrolę nad świadczoną usługą, a cenę i warunki ustalamy przed wykonaniem tłumaczenia.<br></p>
-                                                    </div>
-                                                </li>
-                                                <li class="list-group-item d-flex align-items-baseline border-0 p-0 bg-transparent mb-3"><img class="mr-3 width--44" src="assets/img/icon-checkbox.svg">
-                                                    <div>
-                                                        <h3 class="text-primary h2">Wsparcie 24/7</h3>
-                                                        <p class="mb-0">Lantra Tłumaczenia pragnie zapewniać swoim klientom elastyczne rozwiązania, dlatego zapewniamy pełne wsparcie i pomoc w nagłych sytuacjach, nawet przez całą dobę.&nbsp;Stawiamy na profesjonalną i
-                                                            skuteczną komunikację z klientem przez telefon lub adres e-mail.<br></p>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="section__page__main__estimation" class="mb--reverse--80">
-                <div class="container-fluid p-0" id="cennik">
-                    <div class="text-white bg-primary pt--150 px-3">
-                        <h2 class="display-2 text-center mb-3">Wyceń tłumaczenie</h2>
-                        <p class="lead text-center text-secondary font-weight-bold">Kalkulator pozwala szybko oszacować wstępny koszt tłumaczenia.</p>
-                        <p class="text-center"><small class="d-inline-block">W zależności od podanych parametrów, tematyki materiału do tłumaczenia oraz formatu pliku źródłowego cena tłumaczenia może ulec zmianie.<br>Przedstawiona oferta cenowa ma charakter informacyjny i nie stanowi oferty handlowej w rozumieniu art. 66 Kodeksu Cywilnego.<br></small></p>
-                        <form>
-                            <div class="container">
-                                <fieldset>
-                                    <legend class="text-center d-flex justify-content-center"><span class="bg-secondary d-inline-block py-2 px-3">Zaznacz właściwe pola, aby obliczyć szacunkową cenę tłumaczenia</span></legend>
-                                    <div class="border-dark pt-3 border-bottom">
-                                        <div class="form-row">
-                                            <div class="col-sm-6 col-md-4">
-                                                <div class="form-group">
-                                                    <h3 class="text-secondary h5 mb-0">Języki</h3>
-                                                </div>
-                                            </div>
-                                            <div class="col">
-                                                <div class="form-row">
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-1"><label class="custom-control-label" for="formCheck-1">z angielskiego na polski</label></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-2"><label class="custom-control-label" for="formCheck-2">z polskiego na angielski</label></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="border-dark pt-3 border-bottom">
-                                        <div class="form-row">
-                                            <div class="col-sm-6 col-md-4">
-                                                <div class="form-group">
-                                                    <h3 class="text-secondary h5 mb-0">Sposób rozliczenia*:</h3>
-                                                </div>
-                                            </div>
-                                            <div class="col">
-                                                <div class="form-row">
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-3"><label class="custom-control-label d-flex flex-column" for="formCheck-3"><span>słowa</span><small>(od 0,14 zł netto za jedno słowo)</small></label></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-4"><label class="custom-control-label d-flex flex-column" for="formCheck-4"><span>znaki ze spacjami</span><small>(od 35 zł netto za stronę rozliczeniową = 1800 znaków ze spacjami)</small></label></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <p class="text-center"><small class="d-inline-block">* Aby sprawdzić, ilość słów lub znaków ze spacjami w pliku Word, przejdź do zakładki “Recenzja”, a następnie wybierz “Statystyka wyrazów”. </small></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="border-dark pt-3 border-bottom">
-                                        <div class="form-row">
-                                            <div class="col-sm-6 col-md-4">
-                                                <div class="form-group">
-                                                    <h3 class="text-secondary h5 mb-0">Tryb tłumaczenia:</h3>
-                                                </div>
-                                            </div>
-                                            <div class="col">
-                                                <div class="form-row">
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-5"><label class="custom-control-label d-flex flex-column" for="formCheck-5"><span>standardowy</span><small>(do 2000 słów lub 8 stron rozliczeniowych na dobę)</small></label></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-6"><label class="custom-control-label d-flex flex-column" for="formCheck-6"><span>ekspresowy</span><small>(więcej niż 2000 słów lub 8 stron rozliczeniowych na dobę)</small></label></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="pt-3">
-                                        <div class="form-row justify-content-center align-items-center">
-                                            <div class="col-sm-6 col-md-3 col-xl-2">
-                                                <div class="form-group mb-sm-0">
-                                                    <h3 class="text-md-right text-secondary h5 mb-0">Podaj liczbę słów:</h3>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-3 col-xl-2">
-                                                <div class="form-group mb-0"><input class="form-control form-control-lg rounded-pill text-center" type="number"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </fieldset>
-                            </div>
-                            <div class="container px-0">
-                                <div class="px-3 middle-arrow pt--33 position-relative z-index--200">
-                                    <div class="position-relative">
-                                        <div class="form-row justify-content-center align-items-start align-items-xl-center">
-                                            <div class="col-12 col-xl-4">
-                                                <div class="form-group">
-                                                    <h3 class="text-center text-xl-right h5 mb-0">Szacowana cena tłumaczenia</h3>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-auto col-xl-4">
-                                                <div class="form-group">
-                                                    <p class="d-flex justify-content-center h1 display-2 mb-0"><span class="mr-2">1200</span><small class="h3">zł netto</small></p>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-auto col-xl-4">
-                                                <div class="form-group">
-                                                    <p class="text-primary d-flex justify-content-center justify-content-xl-start h1 mb-0"><span class="mr-2">1200</span><small class="h4">zł brutto</small></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex justify-content-center"><button class="btn btn-primary btn-lg py--15 px--60" type="submit">Zamawiam</button></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div id="section__page__main__contact">
-                <div class="container-fluid p-0" id="kontakt">
-                    <div class="bg-light pt--150" style="background: url(&quot;assets/img/bg-contact.jpg&quot;) center / cover;">
-                        <div class="container">
-                            <h2 class="text-center mb-3" id="kontakt">Kontakt</h2>
-                            <p class="d-flex justify-content-center align-items-center h1 mb-4"><img class="icon mr-4" src="assets/img/icon-phone-circle.svg"><a href="tel:+48 785 144 582">+48 785 144 582</a></p>
-                            <div class="row justify-content-center">
-                                <div class="col-lg-10 col-xl-8">
-                                    <form>
-                                        <div class="form-row">
-                                            <div class="col-sm-6">
-                                                <div class="form-group"><input class="border-dark form-control form-control-lg rounded-pill border--2 p--20" type="text" placeholder="Nazwa firmy"></div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="form-group"><input class="border-dark form-control form-control-lg rounded-pill border--2 p--20" type="text" placeholder="Imię i nazwisko"></div>
-                                            </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="col-sm-6">
-                                                <div class="form-group"><input class="border-dark form-control form-control-lg rounded-pill border--2 p--20" type="text" placeholder="E-mail"></div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="form-group"><input class="border-dark form-control form-control-lg rounded-pill border--2 p--20" type="text" placeholder="Numer telefonu"></div>
-                                            </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="col">
-                                                <div class="form-group"><textarea class="border rounded border-dark form-control form-control-lg border--2 p--20" rows="4" placeholder="Treść wiadomości"></textarea></div>
-                                            </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="col">
-                                                <div class="form-group">
-                                                    <p class="d-flex align-items-baseline"><span class="text-primary mr-1">*</span><span>pola wymagane</span></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="col">
-                                                <div class="form-group">
-                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-7"><label class="custom-control-label" for="formCheck-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sollicitudin varius nulla id bibendum.&nbsp;Praesent scelerisque mi non sodales condimentum.</label></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="col">
-                                                <div class="form-group d-flex pl-4">
-                                                    <div class="bg-white border rounded-0 border-dark d-flex align-items-center p-1 pl-3 border-radius--25 border--2">
-                                                        <ul class="list-unstyled mr-3 mb-0 my-1">
-                                                            <li class="d-flex align-items-baseline"><span class="text-primary mr-2 font-weight-bold">Dodano:</span><span>dokument.docx</span></li>
-                                                        </ul><button class="btn btn-primary p-0 ratio width--40 rounded-circle" type="button"><span><i class="fas fa-plus" style="font-size: 20px;"></i></span></button></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-row mb-3">
-                                            <div class="col">
-                                                <div class="form-group">
-                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-8"><label class="custom-control-label" for="formCheck-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sollicitudin varius nulla id bibendum.&nbsp;Praesent scelerisque mi non sodales condimentum.</label></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-row mb-3">
-                                            <div class="col">
-                                                <div class="form-group">
-                                                    <div class="d-flex justify-content-center"><button class="btn btn-primary btn-lg py--15 px--60" type="submit">Wyślij</button></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </main>
         <footer>
             <div>
@@ -519,7 +212,7 @@
                                         <div class="col-md-auto col-lg-3 col-xl-auto py-3">
                                             <ul class="list-unstyled d-flex flex-column align-items-center align-items-lg-start menu mb-0">
                                                 <li><a class="text-nowrap text-white" href="polityka-prywatnosci.html">Polityka prywatności</a></li>
-                                                <li><a class="text-nowrap text-white" href="#">Polityka cookies</a></li>
+                                                <li><a class="text-nowrap text-white" href="polityka-prywatnosci.html#polityka-cookies">Polityka cookies</a></li>
                                             </ul>
                                         </div>
                                         <div class="col-lg-3 col-xl-auto py-3">
@@ -534,7 +227,7 @@
                                 <div class="col-12 py-3 copyright">
                                     <ul class="list-unstyled text-center d-flex flex-column align-items-center mb-0">
                                         <li class="text-center text-white-50">Copyright © 2020 Lantra Tłumaczenia</li>
-                                        <li><a class="text-white-50" href="https://hadrysiak.com">Made by Hadrysiak.com</a></li>
+                                        <li><a class="text-white-50" href="https://hadrysiak.com" target="_blank"><span>Made by&nbsp;</span><strong class="text-uppercase font-weight-bold">hadrysiak</strong><span class="text-uppercase">.com</span></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -545,24 +238,22 @@
         </footer>
     </div>
     <div>
-        <div class="modal fade mb-4 modal--styled modal--left" role="dialog" tabindex="-1" id="modal__menu">
+        <div class="modal fade shadow mb-4 modal--styled modal--left" role="dialog" tabindex="-1" id="modal__menu" data-backdrop="true">
             <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content rounded-0">
-                    <div class="modal-body px-0 py-3">
+                <div class="modal-content rounded-0 bg-light">
+                    <div class="modal-header bg-light p-0 border-0">
+                        <div><button class="btn btn-primary" data-toggle="modal" type="button" data-target="#modal__menu"><span><i class="la la-times" style="font-size: 32px;"></i></span></button></div><button type="button" class="close" data-dismiss="modal"
+                            aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                    <div class="modal-body px-0 py-3 bg-transparent">
                         <div>
                             <ul class="list-group text-uppercase rounded-0 lead">
-                                <li class="list-group-item px-0 border-0">
-                                    <div class="container-fluid"><span class="d-flex justify-content-start"><button class="btn btn-link rounded-0 ratio width--24 p-0" data-toggle="modal" type="button" data-target="#modal__menu" data-backdrop="true"><span class="text-primary"><i class="la la-times" style="font-size: 32px;"></i></span></button>
-                                        </span>
-                                    </div>
-                                </li>
-                                <li class="list-group-item px-0 border-0">
+                                <li class="list-group-item px-0 border-0 bg-transparent">
                                     <div class="container-fluid"><span class="d-flex justify-content-start"><a class="font-weight-bold" href="index.html#uslugi">Usługi</a></span></div>
                                 </li>
-                                <li class="list-group-item px-0 border-0">
+                                <li class="list-group-item px-0 border-0 bg-transparent">
                                     <div class="container-fluid"><span class="d-flex justify-content-start"><a class="font-weight-bold" href="index.html#jakosc">Jakość</a></span></div>
                                 </li>
-                                <li class="list-group-item px-0 border-0">
+                                <li class="list-group-item px-0 border-0 bg-transparent">
                                     <div class="container-fluid"><span class="d-flex justify-content-start mb-2"><a class="font-weight-bold" href="index.html#specjalizacje">Specjalizacje</a></span>
                                         <ul class="list-unstyled">
                                             <li><a href="biznes-i-marketing.html">Biznes i marketing</a></li>
@@ -572,21 +263,31 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li class="list-group-item px-0 border-0">
+                                <li class="list-group-item px-0 border-0 bg-transparent">
                                     <div class="container-fluid"><span class="d-flex justify-content-start"><a class="font-weight-bold" href="index.html#klienci">Klienci</a></span></div>
                                 </li>
-                                <li class="list-group-item px-0 border-0">
+                                <li class="list-group-item px-0 border-0 bg-transparent">
                                     <div class="container-fluid"><span class="d-flex justify-content-start"><a class="font-weight-bold" href="index.html#cennik">Cennik</a></span></div>
                                 </li>
-                                <li class="list-group-item px-0 border-0">
+                                <li class="list-group-item px-0 border-0 bg-transparent">
                                     <div class="container-fluid"><span class="d-flex justify-content-start"><a class="font-weight-bold" href="index.html#kontakt">Kontakt</a></span></div>
                                 </li>
-                                <li class="list-group-item px-0 border-0">
+                                <li class="list-group-item px-0 border-0 bg-transparent">
                                     <div class="container-fluid"><span class="d-flex justify-content-start"><a class="font-weight-bold" href="/en">EN</a></span></div>
                                 </li>
                             </ul>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-white bg-secondary py-3 fixed-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <p class="mb-0"><strong>Ta strona wykorzystuje pliki cookies.</strong> Więcej informacji znajdą Państwo w naszej <a href="polityka-prywatnosci.html#polityka-cookies">Poiltyce cookies</a></p>
+                    </div>
+                    <div class="col-auto"><button class="btn btn-primary btn-sm text-uppercase" type="button">Akceptuję</button></div>
                 </div>
             </div>
         </div>
