@@ -188,7 +188,8 @@
                         <h2 class="display-2 text-center mb-3">Wyceń tłumaczenie</h2>
                         <p class="lead text-center text-secondary font-weight-bold">Kalkulator pozwala szybko oszacować wstępny koszt tłumaczenia.</p>
                         <p class="text-center"><small class="d-inline-block">W zależności od podanych parametrów, tematyki materiału do tłumaczenia oraz formatu pliku źródłowego cena tłumaczenia może ulec zmianie.<br>Przedstawiona oferta cenowa ma charakter informacyjny i nie stanowi oferty handlowej w rozumieniu art. 66 Kodeksu Cywilnego.<br></small></p>
-                        <form>
+                        <form
+                            id="calculation__form"><input class="form-control" type="hidden" name="type" value="words">
                             <div class="container">
                                 <fieldset>
                                     <legend class="text-center d-flex justify-content-center"><span class="bg-secondary d-inline-block py-2 px-3">Zaznacz właściwe pola, aby obliczyć szacunkową cenę tłumaczenia</span></legend>
@@ -203,12 +204,12 @@
                                                 <div class="form-row">
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-1"><label class="custom-control-label" for="formCheck-1">z angielskiego na polski</label></div>
+                                                            <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-1" name="language" value="en-pl" checked=""><label class="custom-control-label" for="formCheck-1">z angielskiego na polski</label></div>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-2"><label class="custom-control-label" for="formCheck-2">z polskiego na angielski</label></div>
+                                                            <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-2" name="language" value="pl-en"><label class="custom-control-label" for="formCheck-2">z polskiego na angielski</label></div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -226,16 +227,16 @@
                                                 <div class="form-row">
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-3"><label class="custom-control-label d-flex flex-column" for="formCheck-3"><span>słowa</span><small>(od 0,14 zł netto za jedno słowo)</small></label></div>
+                                                            <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-3" name="calculation" value="words" checked=""><label class="custom-control-label d-flex flex-column" for="formCheck-3"><span>słowa</span><small>(od 0,14 zł netto za jedno słowo)</small></label></div>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-4"><label class="custom-control-label d-flex flex-column" for="formCheck-4"><span>znaki ze spacjami</span><small>(od 35 zł netto za stronę rozliczeniową = 1800 znaków ze spacjami)</small></label></div>
+                                                            <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-4" name="calculation" value="characters"><label class="custom-control-label d-flex flex-column" for="formCheck-4"><span>znaki ze spacjami</span><small>(od 35 zł netto za stronę rozliczeniową = 1800 znaków ze spacjami)</small></label></div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <p class="text-center"><small class="d-inline-block">* Aby sprawdzić, ilość słów lub znaków ze spacjami w pliku Word, przejdź do zakładki “Recenzja”, a następnie wybierz “Statystyka wyrazów”. </small></p>
+                                                <p class="text-center"><small class="d-inline-block">Aby sprawdzić, ilość słów lub znaków ze spacjami w pliku Word, przejdź do zakładki <em>Recenzja</em>, a następnie wybierz <em>Statystyka wyrazów</em></small></p>
                                             </div>
                                         </div>
                                     </div>
@@ -250,12 +251,12 @@
                                                 <div class="form-row">
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-5"><label class="custom-control-label d-flex flex-column" for="formCheck-5"><span>standardowy</span><small>(do 2000 słów lub 8 stron rozliczeniowych na dobę)</small></label></div>
+                                                            <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-5" name="translation" value="standard" checked=""><label class="custom-control-label d-flex flex-column" for="formCheck-5"><span>standardowy</span><small>(do 2000 słów lub 8 stron rozliczeniowych na dobę)</small></label></div>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-6"><label class="custom-control-label d-flex flex-column" for="formCheck-6"><span>ekspresowy</span><small>(więcej niż 2000 słów lub 8 stron rozliczeniowych na dobę)</small></label></div>
+                                                            <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-6" name="translation" value="express"><label class="custom-control-label d-flex flex-column" for="formCheck-6"><span>ekspresowy</span><small>(więcej niż 2000 słów lub 8 stron rozliczeniowych na dobę)</small></label></div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -266,11 +267,11 @@
                                         <div class="form-row justify-content-center align-items-center">
                                             <div class="col-sm-6 col-md-3 col-xl-2">
                                                 <div class="form-group mb-sm-0">
-                                                    <h3 class="text-md-right text-secondary h5 mb-0">Podaj liczbę słów:</h3>
+                                                    <h3 class="text-md-right text-secondary h5 mb-0" id="type-pl">Podaj liczbę słów:</h3>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-3 col-xl-2">
-                                                <div class="form-group mb-0"><input class="form-control form-control-lg rounded-pill text-center" type="number"></div>
+                                                <div class="form-group mb-0"><input class="form-control form-control-lg rounded-pill text-center" type="number" name="count" value="1000"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -287,20 +288,20 @@
                                             </div>
                                             <div class="col-sm-auto col-xl-4">
                                                 <div class="form-group">
-                                                    <p class="d-flex justify-content-center h1 display-2 mb-0"><span class="mr-2">1200</span><small class="h3">zł netto</small></p>
+                                                    <p class="d-flex justify-content-center h1 display-2 mb-0"><span id="netvalue" class="mr-2">0</span><small class="h3">zł netto</small></p>
                                                 </div>
                                             </div>
                                             <div class="col-sm-auto col-xl-4">
                                                 <div class="form-group">
-                                                    <p class="text-primary d-flex justify-content-center justify-content-xl-start h1 mb-0"><span class="mr-2">1200</span><small class="h4">zł brutto</small></p>
+                                                    <p class="text-primary d-flex justify-content-center justify-content-xl-start h1 mb-0"><span id="grossvalue" class="mr-2">0</span><small class="h4">zł brutto</small></p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="d-flex justify-content-center"><button class="btn btn-primary btn-lg py--15 px--60" type="submit">Zamawiam</button></div>
+                                        <div class="d-flex justify-content-center"><button class="btn btn-primary btn-lg py--15 px--60" type="button">Zamawiam</button></div>
                                     </div>
                                 </div>
                             </div>
-                        </form>
+                            </form>
                     </div>
                 </div>
             </div>
