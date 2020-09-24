@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator:class="shape-white" Adobe Illustrator 24.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 280 280" enable-background="new 0 0 280 280" xml:space="preserve">
+<g id="Sqare">
+	<style>
+		.shape-white {
+			fill: #646464;
+		}
+
+		.shape-cyan {
+			fill: #0E9CD9;
+		}
+	</style>
+	<polygon class="shape-white" points="0,280 280,280 280,94.9 0,185.1 	"/>
+	<polygon class="shape-cyan" points="0,0 0,185.1 280,94.9 280,0 	"/>
+</g>
+</svg>

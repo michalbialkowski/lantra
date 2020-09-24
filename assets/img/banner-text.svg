@@ -12,19 +12,7 @@
 		.text-cyan {
 			fill: #0E9CD9;
 		}
-
-		.shape-white {
-			fill: #646464;
-			mix-blend-mode: multiply;
-		}
-
-		.shape-cyan {
-			fill: #0E9CD9;
-			mix-blend-mode: multiply;
-		}
 	</style>
-	<polygon class="shape-white" points="0,280 280,280 280,94.9 0,185.1 	"/>
-	<polygon class="shape-cyan" points="0,0 0,185.1 280,94.9 280,0 	"/>
 </g>
 <g id="Roboto">
 	<defs>
